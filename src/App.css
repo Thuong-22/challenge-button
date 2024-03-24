@@ -1,0 +1,124 @@
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.App{
+  display: flex;
+}
+
+.slidebar {
+  display: flex;
+  width: 20%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #fafbfd;   
+  padding: 30px 50px ;   
+}
+
+.title{
+  font-weight: bold;
+  margin-bottom: 50px;  
+  font-size: medium;  
+}
+
+ul li a {
+  display: block;
+  color: #a3a4a4; 
+  font-weight: bold;
+  padding: 20px 0;  
+}
+
+.active{
+  color:black;
+}
+
+.main{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h1{
+  margin-bottom: 30px;
+}
+
+.text{
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+button{
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+
+  
+  /* order: 1; */
+  /* width: 81px;
+  height: 36px;
+  
+  border: none;
+  box-shadow: 0px 2px 3px 0px #33333333;
+  background-color: #e0e0e0;  
+  color: #3f3f3f; */ 
+}
+
+.buttoncomponent{
+  margin: 0 50px 30px 0;
+  display: flex;   
+  flex-direction: column;
+}
+
+.groupbutton{
+  display: flex;
+  flex-direction: row;  
+}
+
+.groupbutton button{
+  margin-right: 90px; 
+  
+}
+
+.icon{
+  font-size: 16px; 
+ 
+}
+
+.groupbutton:last-child .buttoncomponent:not(:first-child)
+{
+  align-self: flex-end;
+}
